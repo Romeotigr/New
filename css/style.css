@@ -381,6 +381,15 @@ body{
 													margin-bottom: 10px;
 												}
 											}
+                                            @media (max-width:360px){
+												.header__mode{
+                                                    flex:0 0 45%;
+                                                }
+                                                .header__call{
+                                                    flex:0 0 55%;
+                                                    text-align: right;
+                                                }
+											}
 										}
 										.menu {
 											width: 900px;
@@ -606,7 +615,7 @@ body{
 				font-size: 17px;
 				margin-bottom: 20px;
 				padding-left: 40px;
-				background: url(../img/icons/check_icon.png)no-repeat;
+				background: url(../img/icons/check_icon.svg)no-repeat;
 			}
 			@media (max-width:950px){
 				.fullscreen__body {
@@ -776,18 +785,22 @@ body{
 				padding-top: 70px;
 			}
 			.how__box {
-				width: 870px;
+				width: 100%;
+                margin: 0 auto;
 			}
 			.how__row {
 				display: flex;
-				justify-content: space-between;
+				justify-content: center;
 			}
 			.how__list {
-				flex:0 0 50%;
+				flex:0 0 100%;
 				margin-top: 30px;
 				transition: all 0.8s ease 0.3s;
 				transform: translate(120%, 0);
 				opacity: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 			}
 			.how__list._active{
 				transform: translate(0, 0);
@@ -862,7 +875,7 @@ body{
 					padding: 50px 0 150px 30px;
 				}
 				.how__list {
-					flex:0 0 40%;
+					flex:0 0 100%;
 					margin-top: 30px;
 				}
 				.boss-how {
